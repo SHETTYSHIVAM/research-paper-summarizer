@@ -1,6 +1,8 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.api.paper import router as paper_router
+
+
 app = FastAPI(title="Research Paper Summarizer API")
 
 app.add_middleware(
